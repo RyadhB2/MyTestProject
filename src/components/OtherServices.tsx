@@ -10,8 +10,8 @@ const OtherServices: React.FC<OtherServicesProps> = ({ onPress, disabled }) => (
         style={[styles.mainContainer, { opacity: disabled ? 0.4 : 1 }]}
         onPress={onPress}
         disabled={disabled}>
-        <View style={{ borderRadius: 100, backgroundColor: "#fcbd74", width: 60, height: 60, alignItems: "center", justifyContent: "center" }}>
-            <Text style={{ color: "#f27500" }}>+</Text>
+        <View style={styles.iconContainer}>
+            <Text style={styles.iconStyle}>+</Text>
         </View>
         <Text style={styles.name}>Autre services</Text>
 
@@ -30,6 +30,23 @@ const styles = StyleSheet.create({
         fontSize: 14,
         textAlign: "center",
         color: "#000"
+    },
+    iconStyle: {
+        color: "#f27500",
+        borderColor: "#f27500",
+        borderWidth: 2,
+        borderRadius: 100,
+        width: 20,
+        height: 20,
+        textAlign: "center",
+    },
+    iconContainer: {
+        borderRadius: 100,
+        backgroundColor: "#faede1",
+        width: 60,
+        height: 60,
+        alignItems: "center",
+        justifyContent: "center"
     }
 })
 
