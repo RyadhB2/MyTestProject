@@ -6,12 +6,12 @@ import {
 
 import { Provider } from 'react-redux';
 import { store } from "./src/redux/store/store";
-import MainScreen from './src/screens/MainScreen';
+import MainScreen from './src/screens/MainScreen/MainScreen';
 
 function App(): React.JSX.Element {
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <Provider store={store}>
         <MainScreen />
       </Provider>
